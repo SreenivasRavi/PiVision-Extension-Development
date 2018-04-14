@@ -1,0 +1,89 @@
+{
+  "_from": "sunburst-chart@^1.0.5",
+  "_id": "sunburst-chart@1.0.5",
+  "_inBundle": false,
+  "_integrity": "sha512-9gW+WoQeR4ra8ovSNznEiAeOQAhWoLOX2zWKto5GevLBGbBvosMqJpoSaZq+nIpu2OGxe/CWlSzOcyOTTJJobA==",
+  "_location": "/sunburst-chart",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "sunburst-chart@^1.0.5",
+    "name": "sunburst-chart",
+    "escapedName": "sunburst-chart",
+    "rawSpec": "^1.0.5",
+    "saveSpec": null,
+    "fetchSpec": "^1.0.5"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/sunburst-chart/-/sunburst-chart-1.0.5.tgz",
+  "_shasum": "62963c10731a23ffc05c4a513e03198c431a8158",
+  "_spec": "sunburst-chart@^1.0.5",
+  "_where": "C:\\src\\pi-vision-extensions",
+  "author": {
+    "name": "Vasco Asturiano",
+    "url": "https://bl.ocks.org/vasturiano"
+  },
+  "bugs": {
+    "url": "https://github.com/vasturiano/sunburst-chart/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "accessor-fn": "^1.2.2",
+    "d3-hierarchy": "^1.1.5",
+    "d3-interpolate": "^1.1.6",
+    "d3-path": "^1.0.5",
+    "d3-scale": "^1.0.7",
+    "d3-selection": "^1.1.0",
+    "d3-shape": "^1.2.0",
+    "d3-transition": "^1.1.1",
+    "kapsule": "^1.7.8"
+  },
+  "deprecated": false,
+  "description": "Sunburst interactive chart web component for visualizing hierarchical data",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "postcss-nested": "^2.1.2",
+    "postcss-simple-vars": "^4.1.0",
+    "rollup": "^0.50.0",
+    "rollup-plugin-babel": "^3.0.2",
+    "rollup-plugin-commonjs": "^8.2.4",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-postcss": "^0.5.5",
+    "rollup-watch": "^4.3.1",
+    "uglify-js": "^3.1.5"
+  },
+  "homepage": "https://github.com/vasturiano/sunburst-chart",
+  "keywords": [
+    "d3",
+    "d3-module",
+    "sunburst",
+    "hierarchical",
+    "graph",
+    "svg"
+  ],
+  "license": "MIT",
+  "main": "dist/sunburst-chart.common.js",
+  "module": "dist/sunburst-chart.module.js",
+  "name": "sunburst-chart",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vasturiano/sunburst-chart.git"
+  },
+  "scripts": {
+    "build": "rm -rf dist && mkdir dist && rollup -c",
+    "build-module": "rollup -c rollup.config.module.js",
+    "minify": "uglifyjs dist/sunburst-chart.js -o dist/sunburst-chart.min.js -c -m --comments '/Version/'",
+    "prepublish": "npm run build && npm run minify && npm run build-module",
+    "watch": "rollup -c -w"
+  },
+  "unpkg": "dist/sunburst-chart.min.js",
+  "version": "1.0.5"
+}
