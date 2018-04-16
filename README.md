@@ -6,6 +6,6 @@ PROCEDURE:
 1.First Install the sunburst-chart by "$npm i sunburst-chart".
 2.Copy the files from here and replace it in the created folder.
 3.After replacing parse through the folder in the terminal and use "$npm install" to update the folder.
-4.Use the extension and get ready to see you AF Database in sunburst-chart view with Event frams firing.
+4.Use the extension and get ready to see your AF Database in sunburst-chart view with Event frames flashing.
 
 HAPPY CODING!
